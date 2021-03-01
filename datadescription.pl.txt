@@ -1,0 +1,55 @@
+
+1. Wydarzenia medialne w mediach społecznościowych (social media buzz) 
+   Stworzyć model i metodę estymacji parametrów modelu do klasyfikacji tematów jako wydarzenie medialne (social media buzz) lub nie
+
+
+
+2. Każdy rekord opisuje 7 dni obserwacji postów na konkretny temat, dlatego każdy atrybut opisany jest przez 7 kolejnych kolumn
+   Obserwacje (rekordy) są od siebie niezależne
+
+
+3. Liczba rekordów: 140,707
+
+
+4. Liczba atrybutów: 77 
+   Atrybuty opisują ewolucję pewnych charakterystyk w czasie. Każdy atrybut ma powiązane ze sobą czasy obserwacji
+   np, liczba_aktywnych_dyskusji_0, ..., liczba_aktywnych_dyskusji_6
+
+
+5. Atrybuty:
+
+    - liczba dyskusji na dany temat (LD) - kolumny [0, 6], numeryczne, LD_0, LD_1,..., LD_6
+
+    - wzrost liczby autorów umieszczających wpisy : kolumny [7, 13] numeryczne, WA_0,..., WA_6
+
+    - poziom uwagi poświęcanej tematowi: kolumny [14, 20], numeryczne, PUA_0, ..., PUA_6
+      (miara uwagi jaką autorzy poświęcają danemu tematowi - procentowo)
+
+    - poziom skokowości (burstiness) w liczbach dyskusji: kolumny [21, 27], numeryczne, PS_0, ..., PS6
+      (stosunek liczby dyskusji do ich długości) 
+
+    - liczba osobnych grup dyskutujących temat: kolumny [28, 34], numeryczne, LG_0, ..., LG6
+
+
+    - poziom uwagi mierzony liczbą wpisów: kolumny [35, 41], numeryczne, PUW_0, ..., PUW_6
+
+
+    - miara rozrzedzenia (sparseness) wpisów: kolumny [42, 48], numeryczne, RW_0, ..., RW_6
+
+
+    - interakcje autorów: kolumny [49, 55], numeryczne, IA_0, ..., IA_6
+      (miara średniej liczby autorów wymieniających komentarze na dany temat)
+
+    - liczba autorów: kolumny [56, 62], numeryczne, LA_0, ..., LA_6
+
+
+    - średnia długość dyskusji na dany temat: kolumny [63, 69], numeryczne, DD_0, ..., DD_6
+ 
+
+    - średnia liczba dyskusji na dany temat: kolumny [70, 76], numeryczne, LD_0, ..., LD_1
+
+
+    - atrybut do predykcji: moc wydarzenia medialnego mierzona jako średnia liczba dyskusji, klasyfikacja buzz no buzz
+
+
+
